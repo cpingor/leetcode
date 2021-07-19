@@ -7,8 +7,6 @@
 # @lc code=start
 class Solution:
     def totalNQueens(self, n: int) -> int:
-<<<<<<< HEAD
-=======
         ans = 0
         def backtracking(qs, count, remove):
             nonlocal ans
@@ -30,6 +28,5 @@ class Solution:
                     backtracking(qs + [(count, j)], count + 1, remove)
         backtracking([], 0, set())
         return ans
->>>>>>> 2542e578cef28de95d39d4be5b3dd111e5a70682
 # @lc code=end
 
