@@ -48,11 +48,9 @@ class Solution:
             need[c] = need.get(c, 0) + 1
         count = len(t)
         left = 0
-        result = (0, len(s))
-        for right, c in enumerate(s):
-            
+        result = (0, float('inf'))
+        for right, c in enumerate(s):          
             if c in need:
-
                 if need[c] > 0:
                     count -= 1
                 need[c] -= 1
@@ -62,7 +60,6 @@ class Solution:
                         left += 1
                         if c in need:
                             need[c] += 1
-                            
                             if need[c] == 1:
                                 count += 1
                                 break
