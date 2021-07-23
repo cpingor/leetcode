@@ -15,8 +15,6 @@ class Solution:
             while l1 <= r and s1 > goal:
                 s1 -= nums[l1]
                 l1 += 1
-            l2 = l1
-            s2 = s1
             while l2 <= r and s2 >= goal:
                 s2 -= nums[l2]
                 l2 += 1
